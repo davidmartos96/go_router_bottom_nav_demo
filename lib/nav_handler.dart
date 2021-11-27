@@ -65,7 +65,7 @@ class NavHandler extends ChangeNotifier {
     searchTabInfo,
   ];
 
-  /// Can navigate to a root [location] and change the bottom nav index accordingly
+  /// Navigate to a root [location] and change the bottom nav index accordingly
   void goToRoot(String location, {Object? extra}) {
     if (!location.startsWith("/")) {
       throw Exception("Root location doesn't start with slash: $location");
